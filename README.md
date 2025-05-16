@@ -40,13 +40,18 @@ It allows users to:
 .
 ├── pyqt_library_gui.py # PyQt5 version of the app
 ├── tkinter_library_gui.py # Tkinter version of the app
-├── README.md # Project documentation (this file)
+├── README.md 
 
-yaml
-Copy
-Edit
 
----
+. **Clone the repository**
+
+```bash
+git clone https://github.com/YOUR_USERNAME/LibraryTkinter.git
+cd LibraryTkinter
+
+Create a virtual environment
+python3 -m venv venv_tkinter
+source venv_tkinter/bin/activate  # On macOS/Linux
 
 ##  Getting Started
 
