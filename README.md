@@ -1,60 +1,67 @@
-#  Library Management System (Tkinter GUI)
+#  Library Management System (GUI-based)
 
-This is a simple **Library Management System** built using **Python's Tkinter library**. The app allows you to manage physical 
-and digital (eBook) books through a graphical user interface.
+This project is a simple **Library Management System** implemented in **Python**, featuring two GUI versions:
+
+-  **PyQt5 GUI**
+-  **Tkinter GUI**
+
+It allows users to:
+- Add physical and eBooks
+- Lend and return books
+- Remove books
+- View books by author
+- See a list of available books
 
 ---
 
-## Features
+##  Features
 
+###  Common Features
 - Add books with Title, Author, and ISBN
-- Mark books as eBooks and specify file size in MB
-- Lend and return books
-- Remove books from the collection
-- View books by a specific author
-- Easy-to-use GUI built with Tkinter
+- eBook support with size input (MB)
+- Display all available books
+- Search for books by author
+
+###  PyQt5 Version
+- Clean, modern interface using PyQt5
+- Dynamic eBook size input toggle
+- List of added books with display
+
+###  Tkinter Version
+- Interactive interface using Tkinter
+- Lend, return, and remove book functions
+- Error handling using message boxes
+- Search books by author's name
 
 ---
 
 ##  Project Structure
 
+.
+├── pyqt_library_gui.py # PyQt5 version of the app
+├── tkinter_library_gui.py # Tkinter version of the app
+├── README.md # Project documentation (this file)
 
-LibraryTkinter/
-│
-├── library_gui_tkinter.py # Main application file
-├── requirements.txt # Python packages (auto-generated)
-├── .gitignore # Ignore virtual environment folder
-├── README.md # Project documentation
-└── venv_tkinter/ # Virtual environment (excluded from GitHub)
-
----
-
-##  Requirements
-
-- Python 3.x
-- Tkinter (comes pre-installed with Python)
+yaml
+Copy
+Edit
 
 ---
 
-## ▶ How to Run
+##  Getting Started
 
-1. **Clone the repository**
+###  Requirements
+
+Install required dependencies:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/LibraryTkinter.git
-cd LibraryTkinter
+pip install pyqt5
+Tkinter is included with standard Python installations, no need to install it separately.
 
-Create a virtual environment
-python3 -m venv venv_tkinter
-source venv_tkinter/bin/activate  # On macOS/Linux
+▶️ Run PyQt5 App
 
+python pyqt_library_gui.py
 
-Install dependencies
+▶️ Run Tkinter App
 
-pip install -r requirements.txt
-
-Run the app
-python library_gui_tkinter.py
-
-
-
+python tkinter_library_gui.py
