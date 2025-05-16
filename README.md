@@ -13,11 +13,11 @@ Two UI Options: Available with both Tkinter and PyQt GUI versions.
 Interface Preview
 The GUI features input fields for book data, checkboxes for eBook options, and buttons for all key actions — all managed through an intuitive layout.
 
-🛠️ Technologies Used
+Technologies Used
 Python 3
 Tkinter - For the lightweight GUI version
 PyQt5 - For the modern GUI alternative (more styling options)
-📂 File Structure
+File Structure
 library_gui_tkinter.py — Tkinter version of the app
 library_gui_pyqt.py — PyQt version of the app
 Each file implements the same functionality but uses a different Python GUI library.
